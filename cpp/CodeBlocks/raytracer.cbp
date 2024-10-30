@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="raytracer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Cena simples">
+				<Option output="bin/raytracer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="cena-simples.txt" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add directory="../lib/windows/" />
+				</Linker>
+			</Target>
+			<Target title="Cena primitivas">
+				<Option output="bin/raytracer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="cena-primitivas.txt" />
+				<Compiler>
+					<Add option="-std=c++14" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add directory="../lib/linux/" />
+				</Linker>
+			</Target>
+			<Target title="Cena 2 fontes luz">
+				<Option output="bin/raytracer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="cena-2-fontes-luz.txt" />
+				<Compiler>
+					<Add option="-std=c++14" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add directory="../lib/linux/" />
+				</Linker>
+			</Target>
+			<Target title="Cena arvore">
+				<Option output="bin/raytracer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="cena-arvore.txt" />
+				<Compiler>
+					<Add option="-std=c++14" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add directory="../lib/linux/" />
+				</Linker>
+			</Target>
+			<Target title="Cena empilhadas">
+				<Option output="bin/raytracer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="cena-empilhadas.txt" />
+				<Compiler>
+					<Add option="-std=c++14" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add directory="../lib/linux/" />
+				</Linker>
+			</Target>
+			<Target title="Cena whitted">
+				<Option output="bin/raytracer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="cena-whitted.txt" />
+				<Compiler>
+					<Add option="-std=c++14" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add directory="../lib/linux/" />
+				</Linker>
+			</Target>
+			<Target title="Cena cornell box">
+				<Option output="bin/raytracer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="cena-cornell-box.txt" />
+				<Compiler>
+					<Add option="-std=c++14" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add directory="../lib/linux/" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++14" />
+			<Add option="-g" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../io/input.cpp" />
+		<Unit filename="../io/input.h" />
+		<Unit filename="../io/objects/CircleFactory.cpp" />
+		<Unit filename="../io/objects/CircleFactory.h" />
+		<Unit filename="../io/objects/CylinderFactory.cpp" />
+		<Unit filename="../io/objects/CylinderFactory.h" />
+		<Unit filename="../io/objects/ObjectBuilder.cpp" />
+		<Unit filename="../io/objects/ObjectBuilder.h" />
+		<Unit filename="../io/objects/ObjectFactory.h" />
+		<Unit filename="../io/objects/PlaneFactory.cpp" />
+		<Unit filename="../io/objects/PlaneFactory.h" />
+		<Unit filename="../io/objects/SphereFactory.cpp" />
+		<Unit filename="../io/objects/SphereFactory.h" />
+		<Unit filename="../io/objects/TriangleFactory.cpp" />
+		<Unit filename="../io/objects/TriangleFactory.h" />
+		<Unit filename="../io/output.cpp" />
+		<Unit filename="../io/output.h" />
+		<Unit filename="../io/pygments/CheckerPygmentFactory.cpp" />
+		<Unit filename="../io/pygments/CheckerPygmentFactory.h" />
+		<Unit filename="../io/pygments/PygmentBuilder.cpp" />
+		<Unit filename="../io/pygments/PygmentBuilder.h" />
+		<Unit filename="../io/pygments/PygmentFactory.h" />
+		<Unit filename="../io/pygments/SolidPygmentFactory.cpp" />
+		<Unit filename="../io/pygments/SolidPygmentFactory.h" />
+		<Unit filename="../io/pygments/TexturePygmentFactory.cpp" />
+		<Unit filename="../io/pygments/TexturePygmentFactory.h" />
+		<Unit filename="../lib/lodepng.cpp" />
+		<Unit filename="../lib/lodepng.h" />
+		<Unit filename="../main.cpp" />
+		<Unit filename="../math/vector.cpp" />
+		<Unit filename="../math/vector.h" />
+		<Unit filename="../math/vectorTest.cpp" />
+		<Unit filename="../ray.cpp" />
+		<Unit filename="../ray.h" />
+		<Unit filename="../raytracer.cpp" />
+		<Unit filename="../raytracer.h" />
+		<Unit filename="../scene/Light.cpp" />
+		<Unit filename="../scene/Light.h" />
+		<Unit filename="../scene/Material.cpp" />
+		<Unit filename="../scene/Material.h" />
+		<Unit filename="../scene/Scene.cpp" />
+		<Unit filename="../scene/Scene.h" />
+		<Unit filename="../scene/objects/Circle.cpp" />
+		<Unit filename="../scene/objects/Circle.h" />
+		<Unit filename="../scene/objects/Cylinder.cpp" />
+		<Unit filename="../scene/objects/Cylinder.h" />
+		<Unit filename="../scene/objects/Object.h" />
+		<Unit filename="../scene/objects/Plane.cpp" />
+		<Unit filename="../scene/objects/Plane.h" />
+		<Unit filename="../scene/objects/Sphere.cpp" />
+		<Unit filename="../scene/objects/Sphere.h" />
+		<Unit filename="../scene/objects/Triangle.cpp" />
+		<Unit filename="../scene/objects/Triangle.h" />
+		<Unit filename="../scene/pygments/CheckerPygment.cpp" />
+		<Unit filename="../scene/pygments/CheckerPygment.h" />
+		<Unit filename="../scene/pygments/Pygment.h" />
+		<Unit filename="../scene/pygments/SolidPygment.cpp" />
+		<Unit filename="../scene/pygments/SolidPygment.h" />
+		<Unit filename="../scene/pygments/TexturePygment.cpp" />
+		<Unit filename="../scene/pygments/TexturePygment.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
